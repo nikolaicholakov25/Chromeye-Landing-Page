@@ -12,6 +12,11 @@ code {
     monospace;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 *,*::after,*::before {
   padding: 0;
   margin:0;

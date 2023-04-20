@@ -1,5 +1,5 @@
-import React from "react";
-import { Button, Logo } from "../../components";
+import React, { useState } from "react";
+import { Button, HamburgerMenu, Logo } from "../../components";
 
 interface NavigationProps {
   menu: {
@@ -10,19 +10,29 @@ interface NavigationProps {
 }
 
 export const Naviation: React.FC<NavigationProps> = ({ menu }) => {
+  const [openNavigation, setOpenNavigation] = useState<boolean>(false);
+
   return (
     <nav className="nav">
       <div className="navigation">
         <div className="nav-start">
-          <Logo />
+          <a href="/">
+            <Logo />
+          </a>
+          <HamburgerMenu
+            onClick={() => setOpenNavigation(!openNavigation)}
+            opened={openNavigation}
+          />
         </div>
-        <ul className="nav-list">
+        <ul className={openNavigation ? "nav-list nav-list-open" : "nav-list"}>
           {menu.map((listItem) => (
             <li key={listItem.name}>
               {listItem.name === "Get in touch" ? (
-                <Button>{listItem.name}</Button>
+                <a href={listItem.url}>
+                  <Button>{listItem.name}</Button>
+                </a>
               ) : (
-                listItem.name
+                <a href={listItem.url}>{listItem.name}</a>
               )}
             </li>
           ))}
