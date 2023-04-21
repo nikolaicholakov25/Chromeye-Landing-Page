@@ -131,7 +131,7 @@
 }
 
 .plus-transition {
-  transform: rotateZ(0deg) !important;
+  transform: rotateZ(0deg) translateY(-1px) !important;
 }
 
 .plus-up {

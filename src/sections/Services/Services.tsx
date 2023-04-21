@@ -29,13 +29,11 @@ export const Services: React.FC<ServicesProps> = ({
         <p className="paragraph service-description">{description}</p>
         <div className="services-options-container">
           {items.map((item, i) => (
-            // <div key={`serviceOption${i}`}>
             <ServiceOption
               key={`serviceOption${i}`}
               {...item}
               state={cardStates[i]}
             />
-            // </div>
           ))}
         </div>
         <a href={buttonUrl}>
