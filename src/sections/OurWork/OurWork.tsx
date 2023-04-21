@@ -1,6 +1,8 @@
 import { Button, Section } from "components";
 import React from "react";
 
+const Hand = require("../../assets/svgs/hand.svg");
+
 interface OurWorkProps {
   title: string;
   description: string;
@@ -50,6 +52,11 @@ export const OutWork: React.FC<OurWorkProps> = ({
                 </p>
                 <a href={item.buttonLabel}>
                   <Button cyanite>{item.buttonLabel}</Button>
+                  {i === 1 && (
+                    <div className="hand">
+                      <Hand.ReactComponent />
+                    </div>
+                  )}
                 </a>
               </div>
             </div>
