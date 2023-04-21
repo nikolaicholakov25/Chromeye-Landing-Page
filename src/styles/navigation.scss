@@ -1,14 +1,21 @@
 .nav {
     background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 20px 40px;
+    padding-block: 20px;
     max-width: 1280px;
     margin: auto;
+
+    @media (max-width:1340px) {
+        padding-inline: 40px;
+    }
 
     @media (max-width:1150px) {
         flex-direction: column;
@@ -42,6 +49,7 @@
     @media (max-width:1150px) {
         flex-direction: column;
         padding-inline: 75px;
+        padding-bottom: 32px;
         width: 100%;
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         position: absolute;
@@ -103,6 +111,10 @@
 
     box-shadow: 2px 2px 4px 0px #00000033;
     white-space: nowrap;
+}
+
+.button-cyanite{
+    background-color: #00BAFF !important;
 }
 
 .logo {

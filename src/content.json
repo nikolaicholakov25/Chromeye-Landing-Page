@@ -31,7 +31,11 @@
     "order": 6
     }
     ],
-    "hero": {},
+    "hero": {
+        "title":"Visuals Engineered with Precision",
+        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.",
+        "button": "Request a call"
+    },
     "services": {
     "title": "Services",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.",

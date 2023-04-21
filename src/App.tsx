@@ -1,8 +1,10 @@
 import React from "react";
-import "./styles/index.module.css";
-import "./styles/navigation.css";
 import { Hero, Naviation } from "./sections";
 import content from "./content.json";
+
+import "./styles/index.module.css";
+import "./styles/navigation.css";
+import "./styles/hero.css";
 
 function App() {
   const {
@@ -18,7 +20,7 @@ function App() {
   return (
     <main>
       <Naviation menu={main_menu} />
-      <Hero />
+      <Hero heroText={hero} />
     </main>
   );
 }

@@ -1,5 +1,8 @@
 .nav {
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navigation {
@@ -7,9 +10,14 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 20px 40px;
+  padding-block: 20px;
   max-width: 1280px;
   margin: auto;
+}
+@media (max-width: 1340px) {
+  .navigation {
+    padding-inline: 40px;
+  }
 }
 @media (max-width: 1150px) {
   .navigation {
@@ -47,6 +55,7 @@
   .nav-list {
     flex-direction: column;
     padding-inline: 75px;
+    padding-bottom: 32px;
     width: 100%;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -104,6 +113,10 @@
   border: none;
   box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.2);
   white-space: nowrap;
+}
+
+.button-cyanite {
+  background-color: #00BAFF !important;
 }
 
 .logo {

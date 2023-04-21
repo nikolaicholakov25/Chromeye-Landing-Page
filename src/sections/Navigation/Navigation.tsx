@@ -32,10 +32,10 @@ export const Naviation: React.FC<NavigationProps> = ({ menu }) => {
               <li key={listItem.name}>
                 {listItem.name === "Get in touch" ? (
                   <a href={listItem.url}>
-                    <Button>{listItem.name}</Button>
+                    <Button>{listItem.name.toUpperCase()}</Button>
                   </a>
                 ) : (
-                  <a href={listItem.url}>{listItem.name}</a>
+                  <a href={listItem.url}>{listItem.name.toUpperCase()}</a>
                 )}
               </li>
             ))}
