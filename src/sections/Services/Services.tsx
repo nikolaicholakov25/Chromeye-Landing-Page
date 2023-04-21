@@ -38,7 +38,9 @@ export const Services: React.FC<ServicesProps> = ({
             // </div>
           ))}
         </div>
-        <Button cyanite>{buttonLabel}</Button>
+        <a href={buttonUrl}>
+          <Button cyanite>{buttonLabel}</Button>
+        </a>
       </div>
     </Section>
   );

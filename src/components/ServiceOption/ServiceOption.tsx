@@ -22,7 +22,10 @@ export const ServiceOption: React.FC<ServiceOptionProps> = ({
         <CheckComponent.ReactComponent />
       </div>
       <h2 className="service-title">{title}</h2>
-      <div className="expand-info" onClick={() => setOpenInfo(!openInfo)}>
+      <div
+        className={openInfo ? "expand-info" : "expand-info expand-info-closed"}
+        onClick={() => setOpenInfo(!openInfo)}
+      >
         {openInfo ? (
           <>
             <div className="plus" />

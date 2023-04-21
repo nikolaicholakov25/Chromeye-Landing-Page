@@ -17,6 +17,7 @@
 
 .service-description {
   max-width: 671px;
+  text-align: center;
 }
 
 .services-options-container {
@@ -27,6 +28,11 @@
   justify-content: center;
   margin-bottom: 64px;
   justify-content: space-between;
+}
+@media (max-width: 1150px) {
+  .services-options-container {
+    flex-direction: column;
+  }
 }
 
 .check {
@@ -44,6 +50,18 @@
   align-items: center;
   align-self: stretch;
 }
+@media (max-width: 1150px) {
+  .service-option {
+    align-self: center;
+    margin-bottom: 64px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .service-option:last-of-type {
+    margin-bottom: 0px;
+  }
+}
 
 .expand-info {
   width: 100%;
@@ -54,6 +72,12 @@
   height: 25px;
   margin-bottom: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 1150px) {
+  .expand-info-closed {
+    margin-bottom: 0;
+  }
 }
 
 .service-title {
@@ -77,14 +101,23 @@
   text-align: center;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
           clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  transition: -webkit-clip-path 0.4s ease-out;
-  transition: clip-path 0.4s ease-out;
-  transition: clip-path 0.4s ease-out, -webkit-clip-path 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+@media (max-width: 1150px) {
+  .service-info {
+    display: none;
+  }
 }
 
 .service-info-open {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%) !important;
+  top: 0;
+}
+@media (max-width: 1150px) {
+  .service-info-open {
+    display: block;
+  }
 }
 
 .plus {
