@@ -6,6 +6,7 @@ import "./styles/index.module.css";
 import "./styles/navigation.css";
 import "./styles/hero.css";
 import "./styles/services.css";
+import "./styles/ourwork.css";
 
 function App() {
   const {
