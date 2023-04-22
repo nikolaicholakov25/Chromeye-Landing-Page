@@ -86,7 +86,12 @@ export const Footer: React.FC<FooterProps> = ({
               >
                 <FacebookIcon.ReactComponent />
               </a>
-              <a className="footer-icon" href={twitter}>
+              <a
+                className="footer-icon"
+                target="_blank"
+                rel="noreferrer"
+                href={twitter}
+              >
                 <img
                   src={TwitterIcon}
                   alt="twitter-icon"
@@ -94,12 +99,25 @@ export const Footer: React.FC<FooterProps> = ({
                   height={50}
                 />
               </a>
-              <a className="footer-icon" href={linkedin}>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                className="footer-icon"
+                href={linkedin}
+              >
                 <LinkedinIcon.ReactComponent />
               </a>
             </div>
             <h3 className="h3">Contact</h3>
-            <h5 className="h5">{address}</h5>
+            <h5 className="h5">
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href={`http://maps.google.com/?q=${address}`}
+              >
+                {address}
+              </a>
+            </h5>
             <h5 className="h5">
               <a href={`tel:${phone}`}>Phone: {phone}</a>
             </h5>
