@@ -37,6 +37,9 @@
 .check svg {
   width: 64px;
 }
+.check svg path {
+  fill: var(--cyanite);
+}
 
 .service-option {
   display: flex;

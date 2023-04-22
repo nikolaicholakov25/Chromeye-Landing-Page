@@ -13,8 +13,6 @@ interface AgencyServicesProps {
   }[];
 }
 
-const cardStates = [true, true, false, false];
-
 export const AgencyServices: React.FC<AgencyServicesProps> = ({
   items,
   title,
@@ -36,6 +34,7 @@ export const AgencyServices: React.FC<AgencyServicesProps> = ({
           <div className="agency-services-options">
             {items.map((item) => (
               <div
+                key={`agency-service-${item.title}`}
                 className={
                   sectionOpened === item.title
                     ? "agency-service-option bg-light-grey"

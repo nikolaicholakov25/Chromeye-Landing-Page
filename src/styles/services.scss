@@ -35,6 +35,9 @@
     margin-bottom: 22px;
     svg {
         width: 64px;
+        path {
+            fill:var(--cyanite)
+        }
     }
 }
 
