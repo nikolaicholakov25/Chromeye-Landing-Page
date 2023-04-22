@@ -63,6 +63,12 @@
     height: 100%;
     max-width: 32px;
     max-height: 32px;
+
+    transition: transform 0.4s ease-out;
+}
+
+.arrow-open {
+    transform: rotate(-180deg);
 }
 
 .weight-500 {

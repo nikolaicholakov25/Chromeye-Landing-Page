@@ -20,7 +20,7 @@ export const Naviation: React.FC<NavigationProps> = ({ menu }) => {
   const [openNavigation, setOpenNavigation] = useState<boolean>(false);
 
   return (
-    <header>
+    <header className="header">
       <nav className="nav">
         <div className="navigation">
           <div className="nav-start">

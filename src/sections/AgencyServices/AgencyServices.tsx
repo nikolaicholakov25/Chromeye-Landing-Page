@@ -52,12 +52,14 @@ export const AgencyServices: React.FC<AgencyServicesProps> = ({
                   >
                     {item.title}
                   </span>
-                  <div className="arrow">
-                    {sectionOpened === item.title ? (
-                      <ArrowUp.ReactComponent />
-                    ) : (
-                      <ArrowDown.ReactComponent />
-                    )}
+                  <div
+                    className={
+                      sectionOpened === item.title
+                        ? "arrow arrow-open"
+                        : "arrow"
+                    }
+                  >
+                    <ArrowDown.ReactComponent />
                   </div>
                 </div>
                 {sectionOpened === item.title && (
