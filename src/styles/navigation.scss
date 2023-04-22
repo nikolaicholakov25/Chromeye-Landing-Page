@@ -1,5 +1,5 @@
 .nav {
-    background-color: white;
+    background-color: var(--white);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,7 +44,7 @@
     align-items: center;
     transition: all 1s ease;
     z-index: 10;
-    background-color: white;
+    background-color: var(--white);
 
     @media (max-width:1150px) {
         flex-direction: column;
@@ -66,7 +66,7 @@
             text-align: center;
             margin-right: 0px;
             padding-block: 32px;
-            border-bottom: 2px solid #EDEDED;
+            border-bottom: 2px solid var(--light-grey);
         }
 
     }
@@ -96,8 +96,8 @@
     border-radius: 4px;
     cursor: pointer;
 
-    background-color: #646464;
-    color:white;
+    background-color: var(--grey);
+    color: var(--white);
     outline: none;
     border: none;
 
@@ -106,7 +106,7 @@
 }
 
 .button-cyanite{
-    background-color: #00BAFF !important;
+    background-color: var(--cyanite) !important;
 }
 
 .logo {
@@ -142,7 +142,7 @@
         transition: all .4s ease;
         width: 100%;
         height: 5px !important;
-        background-color: #C4C4C4;
+        background-color: var(--ham-button);
         margin-bottom: 8px;
     }
 

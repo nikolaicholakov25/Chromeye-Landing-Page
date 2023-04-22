@@ -1,3 +1,16 @@
+:root {
+  --white: #FFFFFF;
+  --light-grey: #EDEDED;
+  --grey: #646464;
+  --cyanite: #00BAFF;
+  --ham-button: #C4C4C4;
+  --hero-gradient: linear-gradient(82.02deg, rgba(253, 192, 183, 0.8) 0.98%, rgba(210, 204, 255, 0.8) 50.91%, rgba(107, 180, 253, 0.8) 100%);
+  --hero-gradient-mobile: linear-gradient(202.03deg, rgba(253, 192, 183, 0.8) 26.85%, rgba(210, 204, 255, 0.8) 57.21%, rgba(107, 180, 253, 0.8) 87.06%);
+
+  --blue-gradient: linear-gradient(180deg, rgba(10, 226, 193, 0.8) 0%, rgba(0, 186, 255, 0.8) 100%)
+
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
