@@ -32,6 +32,9 @@ export const OurWork: React.FC<OurWorkProps> = ({
                 className="work-example-img"
                 src={item.image}
                 alt={`work-example-${item.title}`}
+                style={{
+                  objectFit: "cover",
+                }}
               />
               <div className="work-example-info">
                 <h2

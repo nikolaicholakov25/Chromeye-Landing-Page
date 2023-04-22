@@ -32,6 +32,7 @@
 @media (max-width: 1150px) {
   .work-example:nth-of-type(2) {
     flex-direction: column;
+    margin-top: 64px;
   }
 }
 .work-example:nth-of-type(2) .work-example-info {
@@ -54,6 +55,7 @@
 }
 @media (max-width: 1150px) {
   .work-example-img {
+    max-width: 100%;
     margin-bottom: 32px;
   }
 }

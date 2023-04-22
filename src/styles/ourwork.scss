@@ -30,6 +30,7 @@
 
     @media (max-width:1150px) {
         flex-direction: column;
+        margin-top: 64px;
     }
 
     .work-example-info {
@@ -51,6 +52,7 @@
     min-height: 384px;
 
     @media (max-width:1150px) {
+        max-width: 100%;
         margin-bottom: 32px;
     }
 }
