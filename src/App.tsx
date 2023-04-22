@@ -1,5 +1,12 @@
 import React from "react";
-import { AgencyServices, Hero, Naviation, OurWork, Services } from "./sections";
+import {
+  AgencyServices,
+  Hero,
+  LetsStart,
+  Naviation,
+  OurWork,
+  Services,
+} from "./sections";
 import content from "./content.json";
 
 import "./styles/index.module.css";
@@ -9,6 +16,7 @@ import "./styles/hero.css";
 import "./styles/services.css";
 import "./styles/ourwork.css";
 import "./styles/agency-services.css";
+import "./styles/letsstart.css";
 
 function App() {
   const {
@@ -28,6 +36,7 @@ function App() {
       <Services {...services} />
       <OurWork {...portfolio} />
       <AgencyServices {...agency_services} />
+      <LetsStart />
     </main>
   );
 }

@@ -1,0 +1,47 @@
+.lets-start-banner {
+  width: 100%;
+  max-width: 100%;
+  height: 570px;
+}
+@media (max-width: 1150px) {
+  .lets-start-banner {
+    height: 500px;
+  }
+}
+
+.lets-start-title {
+  text-align: center;
+}
+
+.flex-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lets-start-container {
+  width: 100%;
+  max-width: 900px;
+  background-color: rgba(255, 255, 255, 0.8980392157);
+  color: var(--blue);
+  border-radius: 10px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 76px;
+}
+@media (max-width: 1150px) {
+  .lets-start-container {
+    width: calc(100% - 50px);
+    height: calc(100% - 124px);
+    padding-inline: 5px;
+  }
+}
+
+.lets-start-p {
+  max-width: 611px;
+  text-align: center;
+  margin-top: 16px;
+}/*# sourceMappingURL=letsstart.css.map */
