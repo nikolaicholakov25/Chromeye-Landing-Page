@@ -1,4 +1,4 @@
-import { Button, Section } from "components";
+import { Button } from "components";
 import React from "react";
 
 const clouds = require("../../assets/imgs/desktop-banner.jpg");

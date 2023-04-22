@@ -23,7 +23,7 @@ export const OurWork: React.FC<OurWorkProps> = ({
   return (
     <Section>
       <div className="section our-work-section">
-        <h1 className="section-title h2">{title}</h1>
+        <h1 className="section-title h2">Our Work</h1>
         <p className="p service-description">{description}</p>
         <div className="our-work-showcase-container">
           {items.map((item, i) => (

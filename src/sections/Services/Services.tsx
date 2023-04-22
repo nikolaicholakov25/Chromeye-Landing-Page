@@ -25,7 +25,7 @@ export const Services: React.FC<ServicesProps> = ({
   return (
     <Section>
       <div className="section services-container">
-        <h2 className="section-title h2">{title}</h2>
+        <h2 className="section-title h2">Our Services</h2>
         <p className="p service-description">{description}</p>
         <div className="services-options-container">
           {items.map((item, i) => (

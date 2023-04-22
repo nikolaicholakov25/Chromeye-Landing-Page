@@ -16,14 +16,19 @@
     "order": 3
     },
     {
-        "name": "Agency",
-        "url": "#agency",
-        "order": 4
-    },
-    {
     "name": "About",
     "url": "#about",
     "order": 5
+    },
+    {
+    "name": "Agency",
+    "url": "#agency",
+    "order": 4
+    },
+    {
+    "name": "Contact",
+    "url": null,
+    "order": 7
     },
     {
     "name": "Get in touch",
@@ -32,12 +37,14 @@
     }
     ],
     "hero": {
-        "title":"Visuals Engineered with Precision",
-        "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.",
-        "button": "Request a call"
+    "title": "Visuals Engineered with Precision",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.",
+    "buttonLabel": "Request a call",
+    "buttonUrl": "#contact",
+    "image": "https://s3.eu-west-2.amazonaws.com/chromeye.tasks/chromeye_assignment_heroimg_670x500px_v1.png"
     },
     "services": {
-    "title": "Our Services",
+    "title": "Services",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.",
     "items": [
     {
@@ -65,7 +72,7 @@
     "buttonUrl": "#contact"
     },
     "portfolio": {
-    "title": "Our Work",
+    "title": "Services",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, amet sit dui quis amet gravida felis nibh. Netus erat id et placerat massa.",
     "items": [
     {

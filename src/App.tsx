@@ -1,6 +1,7 @@
 import React from "react";
 import {
   AgencyServices,
+  Footer,
   Hero,
   LetsStart,
   Naviation,
@@ -17,6 +18,7 @@ import "./styles/services.css";
 import "./styles/ourwork.css";
 import "./styles/agency-services.css";
 import "./styles/letsstart.css";
+import "./styles/footer.css";
 
 function App() {
   const {
@@ -37,6 +39,7 @@ function App() {
       <OurWork {...portfolio} />
       <AgencyServices {...agency_services} />
       <LetsStart />
+      <Footer company_data={company_data} footer_menu={footer_menu} />
     </main>
   );
 }

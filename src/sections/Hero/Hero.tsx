@@ -4,19 +4,29 @@ const heroBanner = require("../../assets/imgs/hero-img-2.png");
 
 interface HeroProps {
   title: string;
-  paragraph: string;
-  button: string;
+  description: string;
+  buttonLabel: string;
+  buttonUrl: string;
+  image: string;
 }
 
-export const Hero: React.FC<HeroProps> = ({ title, button, paragraph }) => {
+export const Hero: React.FC<HeroProps> = ({
+  title,
+  buttonLabel,
+  buttonUrl,
+  description,
+  image,
+}) => {
   return (
     <Section>
       <div className="gradiant">
         <div className="section hero-container">
           <div className="hero-text">
             <h1 className="hero-title h1">{title}</h1>
-            <p className="p">{paragraph}</p>
-            <Button cyanite>{button}</Button>
+            <p className="p">{description}</p>
+            <a href={buttonUrl}>
+              <Button cyanite>{buttonLabel}</Button>
+            </a>
           </div>
           <img
             className="hero-banner"
