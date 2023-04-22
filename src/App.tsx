@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero, Naviation, OurWork, Services } from "./sections";
+import { AgencyServices, Hero, Naviation, OurWork, Services } from "./sections";
 import content from "./content.json";
 
 import "./styles/index.module.css";
@@ -8,6 +8,7 @@ import "./styles/navigation.css";
 import "./styles/hero.css";
 import "./styles/services.css";
 import "./styles/ourwork.css";
+import "./styles/agency-services.css";
 
 function App() {
   const {
@@ -26,6 +27,7 @@ function App() {
       <Hero {...hero} />
       <Services {...services} />
       <OurWork {...portfolio} />
+      <AgencyServices {...agency_services} />
     </main>
   );
 }
