@@ -2,6 +2,7 @@ import { Button, Section } from "components";
 import React from "react";
 
 const clouds = require("../../assets/imgs/desktop-banner.jpg");
+const cloudsMobile = require("../../assets/imgs/clouds-mobile.png");
 
 interface LetsStartProps {}
 
@@ -11,6 +12,7 @@ export const LetsStart: React.FC<LetsStartProps> = (props) => {
       <img
         className="lets-start-banner"
         src={clouds}
+        srcSet={`${cloudsMobile} 1150w,${clouds} 1200w`}
         alt="clouds"
         style={{ objectFit: "cover" }}
       />

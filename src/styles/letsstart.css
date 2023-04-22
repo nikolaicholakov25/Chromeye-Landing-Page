@@ -6,6 +6,8 @@
 @media (max-width: 1150px) {
   .lets-start-banner {
     height: 500px;
+    -o-object-position: right;
+       object-position: right;
   }
 }
 
