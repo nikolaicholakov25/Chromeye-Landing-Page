@@ -15,7 +15,7 @@ interface OurWorkProps {
   }[];
 }
 
-export const OutWork: React.FC<OurWorkProps> = ({
+export const OurWork: React.FC<OurWorkProps> = ({
   items,
   title,
   description,
@@ -23,8 +23,8 @@ export const OutWork: React.FC<OurWorkProps> = ({
   return (
     <Section>
       <div className="section our-work-section">
-        <h1 className="section-title">{title}</h1>
-        <p className="paragraph service-description">{description}</p>
+        <h1 className="section-title h2">{title}</h1>
+        <p className="p service-description">{description}</p>
         <div className="our-work-showcase-container">
           {items.map((item, i) => (
             <div key={`work-example-${i}`} className="work-example">
@@ -37,17 +37,13 @@ export const OutWork: React.FC<OurWorkProps> = ({
                 <h2
                   className={
                     i === 1
-                      ? "section-title work-example-title text-left"
-                      : "section-title work-example-title"
+                      ? "section-title work-example-title text-left h2"
+                      : "section-title work-example-title h2"
                   }
                 >
                   {item.title}
                 </h2>
-                <p
-                  className={
-                    i === 1 ? "paragraph text-left" : "paragraph text-right"
-                  }
-                >
+                <p className={i === 1 ? "p text-left" : "p text-right"}>
                   {item.description}
                 </p>
                 <a href={item.buttonLabel}>

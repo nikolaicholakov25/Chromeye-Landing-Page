@@ -1,8 +1,9 @@
 import React from "react";
-import { Hero, Naviation, OutWork, Services } from "./sections";
+import { Hero, Naviation, OurWork, Services } from "./sections";
 import content from "./content.json";
 
 import "./styles/index.module.css";
+import "./styles/typography.css";
 import "./styles/navigation.css";
 import "./styles/hero.css";
 import "./styles/services.css";
@@ -24,7 +25,7 @@ function App() {
       <Naviation menu={main_menu} />
       <Hero {...hero} />
       <Services {...services} />
-      <OutWork {...portfolio} />
+      <OurWork {...portfolio} />
     </main>
   );
 }

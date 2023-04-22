@@ -1,0 +1,50 @@
+.h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+}
+
+.h2 {
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  margin-bottom: 32px;
+}
+
+.button-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+}
+
+.h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+}
+
+.h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+}
+
+.h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+}/*# sourceMappingURL=typography.css.map */

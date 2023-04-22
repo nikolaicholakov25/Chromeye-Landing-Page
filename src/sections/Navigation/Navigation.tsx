@@ -29,10 +29,10 @@ export const Naviation: React.FC<NavigationProps> = ({ menu }) => {
             className={openNavigation ? "nav-list nav-list-open" : "nav-list"}
           >
             {menu.map((listItem) => (
-              <li key={listItem.name}>
+              <li className="h4" key={listItem.name}>
                 {listItem.name === "Get in touch" ? (
                   <a href={listItem.url}>
-                    <Button>{listItem.name.toUpperCase()}</Button>
+                    <Button>{listItem.name}</Button>
                   </a>
                 ) : (
                   <a href={listItem.url}>{listItem.name.toUpperCase()}</a>

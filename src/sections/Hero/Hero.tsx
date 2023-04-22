@@ -14,8 +14,8 @@ export const Hero: React.FC<HeroProps> = ({ title, button, paragraph }) => {
       <div className="gradiant">
         <div className="section hero-container">
           <div className="hero-text">
-            <h1 className="hero-title">{title}</h1>
-            <p className="paragraph">{paragraph}</p>
+            <h1 className="hero-title h1">{title}</h1>
+            <p className="p">{paragraph}</p>
             <Button cyanite>{button}</Button>
           </div>
           <img
