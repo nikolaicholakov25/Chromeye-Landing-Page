@@ -77,6 +77,10 @@
     border-bottom: 2px solid var(--light-grey);
   }
 }
+.nav-list li a {
+  display: block;
+  width: 100%;
+}
 .nav-list li:last-of-type {
   margin-right: 0;
   cursor: default;
